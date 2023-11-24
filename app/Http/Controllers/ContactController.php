@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Validator;
 class ContactController extends Controller
 {
     public function index(){
@@ -12,16 +12,16 @@ class ContactController extends Controller
 
     public function sendEmail(Request $request)
     {
-        $validator = $request->validate([
-            'user_name' => 'required | regex:/^[a-zA-Z]',
-            'user_email' => 'required | email',
-            'user_phone' => 'required | regex:/^[0-9]',
-            'user_subject' => 'required | regex:/^[a-zA-Z]',
-            'user_message' => 'required | regex:/^[a-zA-Z]',
-        ]);
 
-        if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
-        }
+        $rules = [
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|regex:/^[0-9]+$/|max:11|min:11',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string|max:255',
+        ];
+        $this->validate($request, $rules);
+
+        return view("pages.contact", ['success' => 'Message successfully sent.']);;
     }
 }

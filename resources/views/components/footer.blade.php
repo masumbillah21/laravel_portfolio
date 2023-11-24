@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center py-2">
-                    All right reserve, H. M. Masum Billah
+                    © {{ now()->year }} All Rights Reserved, H. M. Masum Billah
                 </div>
             </div>
         </div>

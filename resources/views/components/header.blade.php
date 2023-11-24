@@ -1,7 +1,7 @@
 <header class="site-header">
     <nav class="navbar navbar-expand-lg py-3">
         <div class="container">
-          <a class="navbar-brand" href="{{ route('home') }}">Portfolio</a>
+          <a class="navbar-brand" href="{{ route('home') }}">H. M. Masum Billah</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
