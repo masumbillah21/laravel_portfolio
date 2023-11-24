@@ -2,8 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h1>Jumbotron Example</h1>
-                <p>Lorem ipsum...</p>
+                <h1>{{$pageTitle ?? ""}}</h1>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <p class="text-end">Home | {{$pageTitle ?? ""}}</p>
             </div>
         </div>
     </div>

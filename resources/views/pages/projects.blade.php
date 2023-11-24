@@ -2,7 +2,7 @@
 @section('title', 'Project')
 
 @section('content')
-@include('components.hero')
+@include('components.titleBar', ['pageTitle' => 'Projects'])
 <section>
     <div class="container">
         <div class="row">

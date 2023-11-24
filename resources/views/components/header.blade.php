@@ -1,5 +1,5 @@
-<header>
-    <nav class="navbar navbar-expand-lg bg-light">
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg py-3">
         <div class="container">
           <a class="navbar-brand" href="{{ route('home') }}">Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
