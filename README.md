@@ -4,7 +4,7 @@ Your task is to create a personal portfolio website using Laravel. This portfoli
 
 ## Instructions to use this project on your local/server
 
-1. Run git clone <my-cool-project>
+1. Run git clone https://github.com/masumbillah21/laravel_portfolio.git
 2. Run composer install
 3. Run cp .env.example .env
     - Create a database
