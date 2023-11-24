@@ -21,6 +21,9 @@
     <div class="service-box site-bg py-5 mt-2 text-white">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="headline-1 text-center text-white">Why Choose Me</h2>
+                </div>
                 @if(isset($services) && !empty($services))
                     @foreach($services as $service)
                         <div class="col-lg-4">

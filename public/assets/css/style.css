@@ -47,6 +47,9 @@ p{
     left: 50%;
     margin-left: -40px;
 }
+.headline-1.text-white:after{
+    background-color: var(--color-white);
+}
 
 /* =========================================================
 Header Styles

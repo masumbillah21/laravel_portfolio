@@ -23,7 +23,7 @@
         {{-- Skills --}}
         <div class="row">
             @if(isset($skills) && !empty($skills))
-                <h2 class="headline-1 text-center">Skills</h2>
+                <h2 class="headline-1 text-center">My Skills</h2>
                 @foreach($skills as $skill)
                     <div class="col-lg-6 mb-4">
                         @include('components.skill', ['skill' => $skill])
