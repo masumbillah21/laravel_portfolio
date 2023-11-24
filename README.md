@@ -2,6 +2,19 @@
 
 Your task is to create a personal portfolio website using Laravel. This portfolio should showcase your skills, projects, and any other relevant information. The project will involve creating a multi-page website with a consistent layout, navigation bar, footer, and social media integration.
 
+## Instructions to use this project on your local/server
+
+1. Run git clone <my-cool-project>
+2. Run composer install
+3. Run cp .env.example .env
+    - Create a database
+    - In .env file add your database login credentials 
+    - Add APP_NAME & APP_URL
+4. Run php artisan key:generate
+5. Run php artisan migrate:refresh --seed
+6. Run php artisan serve
+7. Go to your site link. (For localhost: http://127.0.0.1:8000/)
+
 ## Requirements:
 
 1.    Laravel Setup:
