@@ -17,23 +17,23 @@
     @csrf
     <div class="row">
         <div class="col-lg-6 mb-1">
-            <input type="text" class="form-control" id="user-name" name="name" placeholder="Your name here...">
+            <input type="text" class="form-control" id="user-name" name="name" placeholder="Your name here..." required>
         </div>
         <div class="col-lg-6 mb-1">
-            <input type="email" class="form-control" id="user-email" name="email" placeholder="Your email here...">
+            <input type="email" class="form-control" id="user-email" name="email" placeholder="Your email here..." required>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-6 mb-1">
-            <input type="tel" class="form-control" id="user-phone" name="phone"placeholder="Your phone number here...">
+            <input type="tel" class="form-control" id="user-phone" name="phone"placeholder="Your phone number here..." minlength="11" maxlength="11" required>
         </div>
         <div class="col-lg-6 mb-1">
-            <input type="text" class="form-control" id="user-subject" name="subject"placeholder="Your subject here...">
+            <input type="text" class="form-control" id="user-subject" name="subject"placeholder="Your subject here..." required>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-12 mb-1">
-            <textarea id="user-message" class="form-control" name="message" placeholder="Your message here..." rows="10"></textarea>
+            <textarea id="user-message" class="form-control" name="message" placeholder="Your message here..." rows="10" required></textarea>
         </div>
     </div>
     <div class="row">
